@@ -1,0 +1,26 @@
+{
+  "name": "grunt setup",
+  "version": "1.0.0",
+  "description": "a grunt setup",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjeerddie/grunt-setup.git"
+  },
+  "keywords": [
+    "grunt",
+    "setup"
+  ],
+  "author": "Tjeerd Verschragen (tjeerddie)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjeerddie/grunt-setup/issues"
+  },
+  "homepage": "https://github.com/tjeerddie/grunt-setup",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
