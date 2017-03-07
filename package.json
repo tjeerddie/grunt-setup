@@ -1,5 +1,5 @@
 {
-  "name": "grunt setup",
+  "name": "grunt-setup",
   "version": "1.0.0",
   "description": "a grunt setup",
   "main": "gruntfile.js",
@@ -21,6 +21,15 @@
   },
   "homepage": "https://github.com/tjeerddie/grunt-setup",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-asset-injector": "^0.1.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-injector": "^1.1.0",
+    "load-grunt-config": "^0.19.2"
   }
 }
