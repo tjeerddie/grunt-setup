@@ -26,32 +26,34 @@ module.exports = (grunt) => {
         cssmin: {
             dist: {
                 files: {
-                    './public/css/<%= pkg.name %>.min.css': ['./public/css/**/*.css']
+                    'public/css/<%= pkg.name %>.min.css': ['public/css/**/*.css']
                 }
             }
         },
         concat: {
             dist: {
                 files: {
-                    './public/js/<%= pkg.name %>.js': ['./resources/js/**/*.js',]
+                    'public/js/<%= pkg.name %>.js': ['./resources/js/**/*.js',]
                 }
             }
         },
         uglify: {
             dist: {
                 files: {
-                    './public/js/<%= pkg.name %>.min.js': ['./public/js/**/*.js']
+                    'public/js/<%= pkg.name %>.min.js': ['public/js/**/*.js']
                 }
             }
         },
         injector: {
             options: {
-                template: './public/index.html'
+                template: './public/index.html',
+                addRootSlash: false,
+                ignorePath: 'public/'
             },
             local_dependencies: {
                 files: {
-                    './public/index.html': ['./public/js/**/*.js', './public/css/**/*.css'
-                                            ,'./public/js/**/*.min.js', './public/css/**/*.min.css'],
+                    './public/index.html': ['public/js/**/*.js', 'public/css/**/*.css'
+                                            ,'public/js/**/*.min.js', 'public/css/**/*.min.css'],
                 }
             }
         },
@@ -63,14 +65,6 @@ module.exports = (grunt) => {
             js: {
                 files: ['./resources/js/**/*.js'],
                 tasks: ['concat', 'clean:jsmin', 'uglify', 'clean:js'],
-            },
-            liveReload: {
-                options: {
-                    livereload: true,
-                },
-                files: [
-                    './public/',
-                ]
             }
         }
     });
