@@ -1,13 +1,13 @@
 # grunt-setup
 
-##Serving
+## Serving
 You can use `grunt serve` for minified files.
 
 
 You can use `grunt serve:dev` for the normal files, it won't watch.
 
 
-##tasks
+## tasks
   compass - sass to css compiling to the public/css directory.  
   concat - moving the js files to the public/js directory.  
   cssmin - minifying the css files.  
